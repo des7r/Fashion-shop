@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/norgit initmalize.css" />
+    <link rel="stylesheet" href="css/norgit initmalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/iconsfont.css">
+    <link rel="stylesheet" href="css/style.css">
+
     <title>Document</title>
   </head>
 
@@ -14,12 +17,16 @@
       <div class="container">
         <div class="header_main">
           <div class="header_left">
-            <div class="logo">
-              <a href="#"> <img src="img/brand.png" /> </a>
-            </div>
+              <a class="logo" href="#"> 
+                <img src="img/brand.png"/>
+                <p class="bran">BRAN</p>
+                <span class="d">D</span>
+              </a>
             <div class="browse">
               <details class="browse-title">
-                <summary class="browse-subtitle">Browse</summary>
+                <summary class="browse-subtitle">Browse
+                  <i class="arrow fas fa-caret-down"></i>
+                </summary>
                 <div class="browse_box">
                   <div class="browse_box_content">
                     <h1 class="browse_box_heading">Women</h1>
@@ -62,11 +69,59 @@
           </div>
           <div class="header_right">
             <div class="basket">
-              <a href="#"> <img src="img/basket.png" /> </a>
+              <details>
+                <summary><img src="img/basket.png" alt="cart"></summary>
+                <div class="cart__down">
+                    <div class="cart__down-item">
+                        <div class="cart__img">
+                            <img src="img/cart-item_1.png" alt="cart-item">
+                        </div>
+                        <div class="cart__text">
+                            <p class="cart__text-heading">Rebox Zane</p>
+                            <div class="cart__text-star">
+                              <i class=" star fas fa-star"></i>
+                              <i class=" star fas fa-star"></i>
+                              <i class=" star fas fa-star"></i>
+                              <i class=" star fas fa-star"></i>
+                              <i class=" star fas fa-star"></i>
+                            </div>
+                            <p class="cart__text-price" >1  x   $250</p>
+                        </div>
+                        <i class="close fas fa-times-circle"></i>
+                    </div>
+                    <div class="cart__down-item">
+                        <div class="cart__img">
+                            <img src="img/cart-item_2.png" alt="cart-item">
+                        </div>
+                        <div class="cart__text">
+                            <p class="cart__text-heading">Rebox Zane</p>
+                            <div class="cart__text-star">
+                              <div class="cart__text-star">
+                                <i class=" star fas fa-star"></i>
+                                <i class=" star fas fa-star"></i>
+                                <i class=" star fas fa-star"></i>
+                                <i class=" star fas fa-star"></i>
+                                <i class=" star fas fa-star"></i>
+                              </div>
+                            </div>
+                            <p class="cart__text-price">1  x   $250</p>
+                        </div>
+                        <i class=" close fas fa-times-circle"></i>
+                    </div>
+                    <div class="cart__down-price">
+                        <p class="cart__down-price_text">TOTAL</p>
+                        <p class="cart__down-price_text">$500.00</p>
+                    </div>
+                    <a class="cart__down-chek" href="checkout.html">Checkout</a>
+                    <a class="cart__down-go" href="cart.html">Go to cart</a>
+                </div>
+            </details>
             </div>
             <div class="account">
               <details class="account-title">
-                <summary class="account-subtitle">My account</summary>
+                <summary class="account-subtitle">My account
+                  <i class="arrow arrow__white fas fa-caret-down"></i>
+                </summary>
               </details>
             </div>
           </div>
@@ -512,105 +567,124 @@
       </div>
       <div class="cards container">
         <div class="card">
-          <div class="card_img card1">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card1.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
             </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
           </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
+        </div>
+
+        <div class="card">
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card2.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
+            </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
+          </div>
         </div>
         <div class="card">
-          <div class="card_img card2">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card3.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
             </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
           </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
         </div>
         <div class="card">
-          <div class="card_img card3">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card4.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
             </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
           </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
         </div>
         <div class="card">
-          <div class="card_img card4">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card5.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
             </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
           </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
         </div>
         <div class="card">
-          <div class="card_img card5">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card6.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
             </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
           </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
         </div>
         <div class="card">
-          <div class="card_img card6">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card7.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
             </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
           </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
         </div>
         <div class="card">
-          <div class="card_img card7">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
+          <a class="card-link" href="#"> 
+            <img class="card-product"  src="img/card8.png" alt="">
+            <div class="cards__text">
+              <h1 class="card_title">Mango People T-shirt</h1>
+              <p class="card_subtitle">$52.00</p>
             </div>
+          </a>
+          <div class="card_shop">
+            <a class="card_shop_link" href="#" >
+              <img class="card_shop_link_img" src="img/card_basket.png" alt="card-img"> Add to Cart
+            </a>
           </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
         </div>
-        <div class="card">
-          <div class="card_img card8">
-            <div class="card_shop">
-              <div class="card_shop_link">
-                <a class="card_shop_link_img" href="#"></a>
-                <a class="card_shop_link_text" href="#">Add to Cart </a>
-              </div>
-            </div>
-          </div>
-          <h1 class="card_title">Mango People T-shirt</h1>
-          <p class="card_subtitle">$52.00</p>
-        </div>
+        
       </div>
       <div class="fetured-items_browse container">
         <a class="fetured-items_browse_link" href="#"
-          >Browse All Product &nbsp;&nbsp;🠒</a
+          >Browse All Product 
+          <i class="arrow-right fas fa-long-arrow-alt-right"></i></a
         >
       </div>
     </section>
@@ -704,9 +778,11 @@
     <footer class="footer">
       <div class="footer_box container">
         <div class="footer__left">
-          <div class="logo">
-            <a href="#"> <img src="img/brand.png" /> </a>
-          </div>
+          <a class="logo" href="#"> 
+            <img src="img/brand.png"/>
+            <p class="bran">BRAN</p>
+            <span class="d">D</span>
+          </a>
           <div class="footer__text">
             <p class="footer__text_info">
               Objectively transition extensive data rather than cross functional
