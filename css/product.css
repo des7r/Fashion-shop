@@ -330,15 +330,39 @@ details summary::-webkit-details-marker {
   border-bottom: 1px solid #ededed;
 }
 
-
-.star {
-  font-size: 12px;
-  color: #e4af48;
+.cart__text-star:not(:checked) > input {
+	display: none;
+}
+.cart__text-star:not(:checked) > label {
+  float: right;
+  width: 12px;
+  padding: 0;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 32px;
+  color: lightgrey;
+  text-shadow: 1px 1px #bbb;
+}
+.cart__text-star:not(:checked) > label:before {
+	content: '★';
+}
+.cart__text-star > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.cart__text-star:not(:checked) > label:hover,
+.cart__text-star:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.cart__text-star > input:checked + label:hover,
+.cart__text-star > input:checked + label:hover ~ label,
+.cart__text-star > input:checked ~ label:hover,
+.cart__text-star > input:checked ~ label:hover ~ label,
+.cart__text-star > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
 }
 
-.cart__text {
-  line-height: 1.6;
-}
 
 .cart__text-heading {
   color: #222222;
@@ -346,11 +370,13 @@ details summary::-webkit-details-marker {
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  line-height: 2.8;
+  margin: 0;
 }
 
 .cart__text-star {
   display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 
 .cart__text-price {
@@ -358,7 +384,7 @@ details summary::-webkit-details-marker {
   font-family: Lato;
   font-size: 12px;
   font-weight: 600;
-  line-height: 2.8;
+  margin: 0;
 }
 
 .close {
@@ -585,6 +611,7 @@ details summary::-webkit-details-marker {
   .arrivals__link:hover {
     color: #f16d7f;
     font-weight: bold;
+    transition: color 1s ease-out;
   }
 
   .dropdown {
